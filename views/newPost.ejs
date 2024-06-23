@@ -1,0 +1,17 @@
+<h1>Create a new post</h1>
+
+<div class="container">
+    <form action="/posts" method="post">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" name="title" id="title" placeholder="Post Title">
+        </div>
+        <div class="mb-3">
+            <label for="post" class="form-label">Post</label>
+            <textarea type="text" class="form-control" name="post" id="post" placeholder="Post Body" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary rounded-pill px-3" type="button">Submit</button>
+    </form>
+</div>
+
+<%- include("partials/footer.ejs") %>
